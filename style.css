@@ -8,8 +8,28 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+.clock-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+}
+
 canvas {
   background: #1a1a2e;
-  box-shadow: 0 0 40px rgba(0,0,0,0.7);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.7);
   border-radius: 50%;
+  display: block;
+}
+
+.center-text {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  pointer-events: none;
 }
